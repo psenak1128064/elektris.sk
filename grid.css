@@ -1,0 +1,35 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.grid div {
+    border-radius: 10px;
+    background-color: black;
+    width: 100%;
+    height: 250px;
+    background-size: contain;
+}
+
+.weidmuller {
+    grid-area: 1 / 1 / 2 / 2;
+    background-image: url("images/wm-cover.jpg");
+}
+
+.pfannenberg {
+    background-image: url("images/pfb-cover.jpg");
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.panduit {
+    background-image: url("images/pdit-cover.jpg");
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.intercable {
+    grid-area: 2 / 2 / 3 / 3;
+}
